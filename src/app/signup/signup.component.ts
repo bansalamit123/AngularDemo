@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class SignupComponent {
 
   form: any = {
-    data:{},
+  
     message: "",
   }
   inputerror: any = {}
@@ -21,7 +21,7 @@ export class SignupComponent {
 
   signUp() {
     var self = this;
-    this.httpClient.post('http://localhost:8080/Auth/signUp', this.form.data).subscribe((res: any) => {
+    this.httpClient.post('http://localhost:8080/Auth/signUp', this.form).subscribe((res: any) => {
       self.form.message = res.result.message;
     })
 
