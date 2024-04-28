@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class SignupComponent {
 
   form: any = {
-    
+    data:{},
     message: "",
   }
   inputerror: any = {}
